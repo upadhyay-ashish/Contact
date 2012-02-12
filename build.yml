@@ -1,0 +1,30 @@
+#sdk: "C:/RhoStudio/ruby/lib/ruby/gems/1.8/gems/rhodes-3.2.1"
+sdkversion: 3.2.1
+name: Know
+version: 1.0
+vendor: rhomobile
+build: debug
+bbver: 4.6
+wmsdk: Windows Mobile 6 Professional SDK (ARMV4I)
+applog: rholog.txt
+iphone:
+  configuration: Release
+  sdk: iphonesimulator5.0
+  provisionprofile: 
+  codesignidentity: 
+  entitlements: 
+  BundleIdentifier: com.rhomobile.know
+  BundleURLScheme: know
+wp:
+  productid: b84c9fe0-37ab-012f-bc84-001e3de1a281
+symbian:
+  uid: 0xe4b7a9fb
+android:
+  version: 2.3.3
+  emulator: sony
+extensions:
+  - json
+  - another-extension
+capabilities:
+  - pim
+  - phone

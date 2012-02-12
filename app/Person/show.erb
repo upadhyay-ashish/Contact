@@ -1,0 +1,33 @@
+<div data-role="page" data-add-back-btn="false" id="details">
+
+  <div data-role="header" data-position="inline">
+    <h1><%= @person['display_name'] %></h1>
+  </div>
+
+  <div data-role="content">
+    <ul data-role="listview">
+      <%= @person %>
+          <li>
+            <div class="itemLabel">Display Name</div>
+            <div class="itemValue"><%= @person['display_name'] %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">Home Number</div>
+            <div class="itemValue"><%= @person['home_number'] %></div>
+          </li>
+          <% if @person['city'] %>
+          <li>
+            <div class="itemLabel">City</div>
+            <div class="itemValue"><%= @person['city'] %></div>
+          </li>
+          <% end %>
+          
+          <li>
+            <a href="tel:<%= @person['home_number'] %>" data-role="button" data-theme="b" rel="external" class="cube">Call Home Number</a> 
+          </li>
+
+    </ul>
+  </div>
+
+</div>
